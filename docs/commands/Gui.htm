@@ -421,7 +421,7 @@ Known limitation: If the first control in the window is disabled (possibly depen
 <pre class="Syntax"><span class="func">GuiSize</span>(GuiHwnd, EventInfo, Width, Height)</pre>
 
 <h3 id="GuiContextMenu">GuiContextMenu</h3>
-<p>Launched whenever the user right-clicks anywhere in the window except the title bar and menu bar. It is also launched in response to pressing <kbd>Menu</kbd> or <kbd>Shift</kbd>+<kbd>F10</kbd>. Unlike most other GUI labels, GuiContextMenu can have more than one concurrent <a href="../misc/Threads.htm">thread</a>. The following built-in variables are available within GuiContextMenu:</p>
+<p>Launched whenever the user right-clicks anywhere in the window except the title bar and menu bar. It is also launched in response to pressing <kbd>Menu</kbd> or <kbd>Shift</kbd>+<kbd>Alt</kbd>. Unlike most other GUI labels, GuiContextMenu can have more than one concurrent <a href="../misc/Threads.htm">thread</a>. The following built-in variables are available within GuiContextMenu:</p>
 <ol>
   <li><a href="../Variables.htm#GuiControl">A_GuiControl</a>, which contains the <a href="../Variables.htm#GuiControl">text or variable name</a> of the control that received the event (blank if none).</li>
   <li><a href="../Variables.htm#EventInfo">A_EventInfo</a>: When a ListBox, ListView, or TreeView is the target of the context menu (as determined by A_GuiControl above), A_EventInfo specifies which of the control's items is the target:
